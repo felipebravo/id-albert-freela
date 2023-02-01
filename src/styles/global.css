@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+}
+
+body {
+	font-family: montserrat, sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-grey: #d9d9d9;
+	--primary-purple: #4b2bb2;
+	--purple-0: #9383c5;
+	--purple-1: #4f15a8;
+	--purple-2: #1c1631;
+	--purple-3: #0d0721;
+	--light-blue: #2fb5f2;
+}
