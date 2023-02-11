@@ -1,5 +1,6 @@
 header {
 	position: fixed;
+	top: 0;
 
 	z-index: 10;
 
@@ -13,12 +14,13 @@ header {
 	background-image: linear-gradient(
 		to right,
 		var(--purple-1),
-		var(--light-blue)
+		var(--purple-3)
 	);
 }
 
 main {
 	width: 100%;
+	margin-top: 72px;
 }
 
 .div__buttons {
@@ -35,7 +37,10 @@ main {
 	height: 100vh;
 	padding: 50px;
 
-	background-color: var(--color-grey);
+	background-image: url('../assets/banner.svg');
+	background-size: cover;
+
+	color: var(--color-white);
 }
 
 .section__landing__div {
@@ -90,20 +95,29 @@ main {
 	background-color: var(--color-grey);
 }
 
-.empty__section {
+.section__plans {
 	display: flex;
 	justify-content: center;
 	gap: 50px;
 
 	width: 100%;
-	height: 100vh;
-	padding: 70px 50px;
+	height: 120vh;
+	padding: 80px 50px 0 50px;
 
 	background-color: var(--purple-3);
+
+	color: var(--color-white);
 }
 
-.empty__section__div {
+.section__plans__options {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+
 	width: 30%;
+	max-height: 90%;
+	padding: 20px 50px;
 
 	border-radius: 28px 28px 0 0;
 
@@ -112,6 +126,39 @@ main {
 		var(--primary-purple),
 		var(--purple-3)
 	);
+}
+
+.section__plans__monthly > h2 {
+	font-size: 32px;
+}
+
+.section__plans__description {
+	text-align: center;
+}
+
+.section__plans__description > h3 {
+	font-size: 32px;
+}
+
+.section__plans__description > span {
+	font-size: 20px;
+}
+
+.section__plans__ul {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.section__plans__ul > li {
+	display: flex;
+	gap: 5px;
+
+	height: fit-content;
+}
+
+.section__plans__ul > li > img {
+	align-self: baseline;
 }
 
 .section__description {
@@ -172,7 +219,7 @@ main {
 .circle-1 {
 	position: absolute;
 	top: -50px;
-	left: 25%;
+	left: 200px;
 
 	z-index: 1;
 
@@ -182,12 +229,13 @@ main {
 	border-radius: 50%;
 
 	background-color: var(--primary-purple);
+	opacity: 0.4;
 }
 
 .circle-2 {
 	position: absolute;
 	bottom: -10px;
-	left: -10px;
+	left: -15px;
 
 	z-index: 1;
 
@@ -197,4 +245,36 @@ main {
 	border-radius: 50%;
 
 	background-color: var(--primary-purple);
+	opacity: 0.2;
+}
+
+footer {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 72px;
+	padding: 10px 50px;
+
+	background-color: var(--primary-purple);
+}
+
+.footer__title {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+
+	width: fit-content;
+
+	font-weight: 500;
+
+	color: var(--color-white);
+}
+
+.footer__title > span {
+	color: var(--color-black);
 }
