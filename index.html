@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="./src/styles/global.css" />
 		<link rel="stylesheet" href="./src/styles/homepage.css" />
 		<link rel="stylesheet" href="./src/styles/button.css" />
+		<link rel="stylesheet" href="./src/styles/carroussel.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -20,7 +21,7 @@
 		<main>
 			<section class="section__landing">
 				<picture class="section__landing__banner"
-					><img src="./src/assets/banner.svg" alt="professor-banner"
+					><img src="./src/assets/banner.svg" alt="main-banner"
 				/></picture>
 				<div class="section__landing__div">
 					<h1>
@@ -42,14 +43,44 @@
 					mais sem ter que gastar rios de dinheiro todo o ano.
 				</h2>
 				<p class="section__about__p">
-					Novas escola trás novas aulas toda sexta feira para você se
+					Nossa escola conta com uma aula nova por semana para você se
 					manter atualizado sobre tudo o que existe de melhor no
-					universo no
+					universo do
 					<strong>marketing digital imobiliário</strong> voltado para
 					você que deseja vender mais.
 				</p>
 				<div class="section__about__banners">
-					<div class="temp"></div>
+					<div class="carousel">
+						<div class="carousel__inner">
+							<img
+								src="./src/assets/first-img.svg"
+								alt="Imagem 1"
+								class="carousel__item"
+							/>
+							<img
+								src="./src/assets/second-img.svg"
+								alt="Imagem 1"
+								class="carousel__item"
+							/>
+							<img
+								src="./src/assets/third-img.svg"
+								alt="Imagem 2"
+								class="carousel__item active"
+							/>
+							<img
+								src="./src/assets/fourth-img.svg"
+								alt="Imagem 3"
+								class="carousel__item"
+							/>
+							<img
+								src="./src/assets/fifth-img.svg"
+								alt="Imagem 3"
+								class="carousel__item"
+							/>
+						</div>
+						<a class="carousel__prev" href="#">&#10094;</a>
+						<a class="carousel__next" href="#">&#10095;</a>
+					</div>
 				</div>
 			</section>
 			<section class="section__description">
@@ -58,10 +89,10 @@
 				<div class="section__description__content">
 					<div class="section__description__content-div">
 						<h2>
-							São aulas praticas e aqui ensinamos apenas o que
+							São aulas práticas e aqui ensinamos apenas o que
 							aplicamos no dia a dia de um escritório com mais de
-							7 anos de experiência e mais de 30 mil em anúncios
-							administrados todos os messes.
+							7 anos de experiência e mais de 500 mil em anúncios
+							administrados todos os meses.
 						</h2>
 						<p>
 							De forma simples e direta, aqui você vai aprender
@@ -119,7 +150,7 @@
 								src="./src/assets/check-field.svg"
 								alt="check-symbol"
 							/>
-							<p>Aulas legendas</p>
+							<p>Aulas legendadas</p>
 						</li>
 						<li>
 							<img
@@ -190,7 +221,7 @@
 								src="./src/assets/check-field.svg"
 								alt="check-symbol"
 							/>
-							<p>Aulas legendas</p>
+							<p>Aulas legendadas</p>
 						</li>
 						<li>
 							<img
@@ -245,4 +276,5 @@
 		src="https://kit.fontawesome.com/05407fe119.js"
 		crossorigin="anonymous"
 	></script>
+	<script src="./src/scripts/scripts.js"></script>
 </html>
