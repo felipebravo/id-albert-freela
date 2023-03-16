@@ -103,15 +103,6 @@ main {
 	margin-top: 24px;
 }
 
-.temp {
-	width: 90%;
-	height: 200px;
-
-	border-radius: 5px;
-
-	background-color: var(--color-grey);
-}
-
 .section__plans {
 	display: flex;
 	justify-content: center;
@@ -226,7 +217,6 @@ main {
 	justify-content: space-between;
 
 	width: 90%;
-	height: 60vh;
 
 	color: var(--color-white);
 }
@@ -236,28 +226,28 @@ main {
 	flex-direction: column;
 	gap: 24px;
 
-	width: 50%;
+	width: 40%;
 	padding: 32px 0;
 }
 
 .section__description__content-image {
 	position: relative;
 
-	width: 50%;
+	width: 60%;
 }
 
 .section__description__content-image > img {
-	position: relative;
+	position: absolute;
+	top: -200px;
 	z-index: 2;
 
 	width: 100%;
-	height: 100%;
 }
 
 .circle-1 {
 	position: absolute;
-	top: 0px;
-	left: 300px;
+	top: -70px;
+	left: 400px;
 
 	z-index: 1;
 
@@ -335,11 +325,28 @@ footer {
 
 		flex-direction: column;
 		align-items: center;
-		gap: 20px;
+		gap: 60px;
+	}
+
+	.section__description__content-div {
+		width: 100%;
 	}
 
 	.section__description__content-image {
-		width: 50%;
+		width: 80%;
+	}
+
+	.section__description__content-image > img {
+		left: -50px;
+	}
+
+	.circle-2 {
+		bottom: -500px;
+		left: 100px;
+	}
+
+	.section__plans {
+		padding: 160px 50px 50px 50px;
 	}
 }
 
@@ -349,6 +356,10 @@ footer {
 		height: 100%;
 
 		transform: translate(-30vw, 0%);
+	}
+
+	.section__description__bg-two {
+		height: 40vh;
 	}
 
 	.section__description__content-div {
@@ -363,6 +374,10 @@ footer {
 	.section__description__content-image {
 		width: 100%;
 	}
+
+	.section__plans {
+		padding: 50px 50px 50px 50px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -370,6 +385,8 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		height: 90vh;
 
 		background-image: linear-gradient(
 			to bottom,
@@ -403,11 +420,16 @@ footer {
 	}
 
 	.circle-1 {
+		left: 320px;
+
 		width: 150px;
 		height: 150px;
 	}
 
 	.circle-2 {
+		bottom: -400px;
+		left: 150px;
+
 		width: 190px;
 		height: 190px;
 	}
@@ -437,6 +459,13 @@ footer {
 	}
 }
 
+@media (max-width: 540px) {
+	.circle-2 {
+		bottom: -300px;
+		left: 0px;
+	}
+}
+
 @media (max-width: 484px) {
 	.section__landing__banner > img {
 		width: 160vw;
@@ -454,7 +483,18 @@ footer {
 		padding: 50px;
 	}
 
+	.section__description__content-image > img {
+		top: -100px;
+		left: -30px;
+	}
+
 	.circle-1 {
-		left: 180px;
+		left: 150px;
+	}
+}
+
+@media (max-width: 380px) {
+	.section__plans {
+		padding: 150px 50px 50px 50px;
 	}
 }
